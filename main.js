@@ -14,11 +14,13 @@ async function getAnswer(chapter, section, question){
         }
     }
 }
-let getProblem = document.getElementById('inputArea').querySelector("#getProblemBtn");
-getProblem.addEventListener('click', async function(){
-  let answer = document.getElementById('displayArea').querySelector('#answer');
-  let chap = document.getElementById('inputArea').querySelector('#chapter');
-  let sect = document.getElementById('inputArea').querySelector('#section');
-  let prob = document.getElementById('inputArea').querySelector('#problem');
-  answer.innerHTML = await getAnswer(chap.value, sect.value, prob.value);
+window.addEventListener('load',function(){
+  let getProblem = document.getElementById('inputArea').querySelector("#getProblemBtn");
+  getProblem.addEventListener('click', async function(){
+    let answer = document.getElementById('displayArea').querySelector('#answer');
+    let chap = document.getElementById('inputArea').querySelector('#chapter');
+    let sect = document.getElementById('inputArea').querySelector('#section');
+    let prob = document.getElementById('inputArea').querySelector('#problem');
+    answer.innerHTML = await getAnswer(chap.value, sect.value, prob.value);
+  });
 });
