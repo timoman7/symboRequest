@@ -22,5 +22,6 @@ window.addEventListener('load',function(){
     let sect = document.getElementById('inputArea').querySelector('#section');
     let prob = document.getElementById('inputArea').querySelector('#problem');
     answer.innerHTML = await getAnswer(chap.value, sect.value, prob.value);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, answer]);
   });
 });
