@@ -14,7 +14,7 @@ async function getAnswer(chapter, section, question){
         }
     }
 }
-let getProblem = document.getElementById("getProblemBtn");
+let getProblem = document.getElementById('inputArea').querySelector("#getProblemBtn");
 getProblem.addEventListener('click', async function(){
   let answer = document.getElementById('displayArea').querySelector('#answer');
   let chap = document.getElementById('inputArea').querySelector('#chapter');
