@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Request Symbolab</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+      });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_HTML-full' async></script>
+    <script src="./main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="inputArea">
+      <input type="text" id="chapter" name="chapter" value="01" placeholder="01">
+      <input type="text" id="section" name="section" value="01" placeholder="01">
+      <input type="text" id="problem" name="problem" value="01" placeholder="01">
+      <button id="getProblemBtn">Get</button>
+    </div>
+    <div id="displayArea">
+      <p id="answer"></p>
+    </div>
+  </body>
+</html>
